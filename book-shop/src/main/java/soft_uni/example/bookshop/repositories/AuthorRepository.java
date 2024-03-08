@@ -19,4 +19,6 @@ public interface AuthorRepository extends JpaRepository <Author, Long> {
         "ORDER BY size(a.books) DESC "
 )
     List<Author> getAuthorsByCountOfBooksDesc();
+    
+    List<Author> getAuthorsByFirstNameEndingWith(String suffix);
 }

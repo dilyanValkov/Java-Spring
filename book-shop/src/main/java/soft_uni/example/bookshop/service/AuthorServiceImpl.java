@@ -53,6 +53,11 @@ public class AuthorServiceImpl implements AuthorService {
     public List<Author> getAuthorsByBooksCount() {
         return this.authorRepository.getAuthorsByCountOfBooksDesc();
     }
+
+    @Override
+    public List<Author> getAuthorsByFirstNameEndingWith(String suffix) {
+        return this.authorRepository.getAuthorsByFirstNameEndingWith(suffix);
+    }
 }
 
 

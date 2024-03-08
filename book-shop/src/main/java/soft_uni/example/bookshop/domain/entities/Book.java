@@ -51,4 +51,6 @@ public class Book extends BaseEntity {
         return this.title + " " + this.editionType.name() + " " + this.price;
     }
 
+
+
 }

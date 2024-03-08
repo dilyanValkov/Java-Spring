@@ -13,4 +13,6 @@ public interface AuthorService {
     List<Author> getAuthorsByBooksAfter (LocalDate date);
     List<Author> getAuthorsByBooksCount();
 
+    List<Author> getAuthorsByFirstNameEndingWith(String suffix);
+
 }
