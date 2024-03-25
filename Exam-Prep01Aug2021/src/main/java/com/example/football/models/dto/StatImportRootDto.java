@@ -12,6 +12,7 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 @Getter
 public class StatImportRootDto {
-@XmlElement(name = "stat")
+
+    @XmlElement(name = "stat")
     List<StatImportDto> stats;
 }

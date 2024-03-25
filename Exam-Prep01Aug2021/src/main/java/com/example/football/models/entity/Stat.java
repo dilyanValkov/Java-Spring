@@ -21,4 +21,9 @@ public class Stat extends BaseEntity{
     private float passing;
 
     private float endurance;
+
+    @Override
+    public String toString() {
+        return String.format("Stat %.2f - %.2f - %.2f ",shooting,passing,endurance);
+    }
 }
