@@ -93,10 +93,10 @@ public class BorrowingRecordsServiceImpl implements BorrowingRecordsService {
                         .findAllByBorrowDateBeforeAndBook_GenreOrderByBorrowDateDesc
                                 (LocalDate.parse("2021-09-10"), Genre.SCIENCE_FICTION);
         records.forEach(r ->
-              sb.append(String.format("Book title: %s\n" +
-                      "*Book author: %s\n" +
-                      "**Date borrowed: %s\n" +
-                      "***Borrowed by: %s %s\n",
+              sb.append(String.format("Star: %s\n" +
+                              "   *Distance: %.2f light years\n" +
+                              "   **Description: %s\n" +
+                              "   ***Constellation: %s",
                       r.getBook().getTitle(),
                       r.getBook().getAuthor(),
                       r.getBorrowDate(),
